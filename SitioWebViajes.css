@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(fondo3.jpeg);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+/* Header */
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-image: url(pa\ probar.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+
+/* Imagen de Logo */
+.nav img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin: 5px 10px;
+    transition: 0.5s;
+}
+.nav img:hover{
+    scale: 1.1;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+/* Links */
+.nav-menu-item{
+    line-height: 60px;
+    width: max-content;
+    margin-right: 0 10px;
+    transition: 0.5s;
+}
+
+.nav-menu-item:hover{
+    scale: 1.4;
+}
+.nav-toggle{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 50px;
+    line-height: 60px;
+    display:none;
+
+}
+
+.Banner-Intro{
+    /* background-image: url(banner.png);
+    background-size: cover;
+    height: 250px;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-right: 30px;
+    background-image: ur;
+}
+.Banner-Intro img{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border: solid white 10px;
+    margin-left: 30px;
+}
+.cabecera{
+    width: 800px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.cabecera p{
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* .Banner-Intro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+} */
+/* .Presentacion{
+    display: block;
+    line-height: 300px;
+}
+.Presentacion h2{
+    text-align: right;
+    color: black;
+} */
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+.titulo h2{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 88, 12);
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+}
+.articulos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25%;
+    margin: 50px;
+    gap: 70px;
+    text-align: center;
+    background-color: white;
+    padding-top: 30px;
+    border-radius: 10px;
+    width: 90%;
+}
+.tarjeta{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.articulos-item{
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+.articulos-item img{
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+.articulos-item:hover{
+    scale: 1.1;
+}
+.articulos-item p{
+    padding-top: 15px;
+}
+
+.footer{
+    background-color:  rgb(9, 12, 29);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+}
+.contactos{
+    color: orangered;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.contactos ul, a{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.contactos li{
+    padding: 10px 30px 20px;
+}
+.contactos a:hover{
+    scale: 1.2;
+    color: blueviolet;
+}
+
+
+.contenedor{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contenedor-contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactenos{
+    display: block;
+    
+    border: 3px solid white ;
+}
+.contactenos h1, p{
+    text-align: center;
+}
+form{
+    width: 600px;
+    margin-bottom: 30px;
+}
+.formulario {
+    background-color: #ffa245;
+    /* border: 5px solid #ffffff; */
+    border-radius: 3px;
+    padding: 40px;
+  }
+
+label{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input{
+    border-radius: 5px;
+    border-color: #c96b0e;
+}
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .datos{
+    display: flex;
+    justify-content: space-between;
+  }
+  #nombre{
+    display: inline-block;
+    width: 100%;
+  }
+  #apellido{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .enviar{
+    width: 100%;
+    background-color: #ff8206;
+    border: none;
+    height: 30px;
+    color: white;
+  }
+  
+/* Responsive pantallas pequeñas */
+
+@media (max-width: 768px){
+    .header{
+        top:0;
+        left: 0;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        position: fixed;
+        background-color: rgb(19, 19, 66);
+        top: 60px;
+        width: 100%;
+        /* Para incluir una barra */
+        left: 100%;
+        transition: left 0.3s;
+        height: calc(100% - 50px);
+    }
+
+
+
+    .Banner-Intro{
+        display: block;
+        padding-top: 70px;
+    }
+    .Banner-Intro img{
+        height: 150px;
+        width: 200px;
+        border: solid white 10px;
+        margin-left: 35%;
+    }
+    .cabecera{
+        width: 100%;
+        margin-left: 30px;
+        border-radius: 20px;
+    }
+    .cabecera p{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+    }
+    .titulo{
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        
+    }
+    .titulo h2{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(250, 88, 12);
+        color: white;
+        font-family: sans-serif;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .articulos{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 90%;
+        margin: 5%;
+        text-align: center;
+        background-color: white;
+        padding-top: 30px;
+        border-radius: 10px;
+        width: 90%;
+    }
+    .nav-menu-item{
+        font-size: 18px;
+        margin: 0 10px;
+        line-height: 50px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+    .nav-toggle{
+        /* Para que se vea ahora el toggle */
+        display: block;
+
+    }
+    .nav-menu_visible{
+        left: 0;
+    }
+    .footer{
+        background-color:  rgb(9, 12, 29);
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        text-align: center;
+    }
+    .contactos{
+        color: orangered;
+        font-weight: bold;
+        padding-top: 15px;
+    }
+    
+    .contactos ul, a{
+        color: white;
+        list-style-type: none;
+        display: block;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .contactos li{
+        margin-left: -35px;
+    }
+    .contactos a:hover{
+        scale: 1.2;
+        color: blueviolet;
+    }
+}
+
+@media (min-width: 768px){
+    .articulos{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 30% 30%;
+        margin: 50px;
+        gap: 70px;
+        text-align: center;
+        background-color: white;
+        padding-top: 30px;
+        border-radius: 10px;
+        width: 90%;
+    }
+}
+@media (min-width: 1024px){
+    
+body{
+    font-family: sans-serif;
+    background-image: url(fondo3.jpeg);
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+/* Header */
+
+.header{
+    width: 100%;
+    height: 60px;
+    background-image: url(pa\ probar.png);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+
+/* Imagen de Logo */
+.nav img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    margin: 5px 10px;
+    transition: 0.5s;
+}
+.nav img:hover{
+    scale: 1.1;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+/* Links */
+.nav-menu-item{
+    line-height: 60px;
+    width: max-content;
+    margin-right: 0 10px;
+    transition: 0.5s;
+}
+
+.nav-menu-item:hover{
+    scale: 1.4;
+}
+.nav-toggle{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 50px;
+    line-height: 60px;
+    display:none;
+
+}
+
+.Banner-Intro{
+    /* background-image: url(banner.png);
+    background-size: cover;
+    height: 250px;
+    width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    padding-right: 30px;
+    background-image: ur;
+}
+.Banner-Intro img{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border: solid white 10px;
+    margin-left: 30px;
+}
+.cabecera{
+    width: 800px;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+.cabecera p{
+    font-size: 30px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* .Banner-Intro img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+} */
+/* .Presentacion{
+    display: block;
+    line-height: 300px;
+}
+.Presentacion h2{
+    text-align: right;
+    color: black;
+} */
+.titulo{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+.titulo h2{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 88, 12);
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+}
+.articulos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25%;
+    margin: 50px;
+    gap: 70px;
+    text-align: center;
+    background-color: white;
+    padding-top: 30px;
+    border-radius: 10px;
+    width: 90%;
+}
+.tarjeta{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.articulos-item{
+    padding: 10px;
+    transition: 0.5s;
+    
+}
+.articulos-item img{
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+}
+.articulos-item:hover{
+    scale: 1.1;
+}
+.articulos-item p{
+    padding-top: 15px;
+}
+
+.footer{
+    background-color:  rgb(9, 12, 29);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+}
+.contactos{
+    color: orangered;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.contactos ul, a{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.contactos li{
+    padding: 10px 30px 20px;
+}
+.contactos a:hover{
+    scale: 1.2;
+    color: blueviolet;
+}
+
+
+.contenedor{
+    width: 100%;
+    border-radius: 20px;
+}
+}
